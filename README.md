@@ -19,28 +19,28 @@ Release - v0.1.0
 
 seleniumcucumber_webapp_testframework | | | |
 ----- | ----- | ----- | ----- | -----
-src/main/java |	----- | com.sk.Managers | ---- |
+src/main/java |	----- | com.automation.Managers | ---- |
 ----- | ----- | ------------ | PageObjectManager.java |
 ----- | ----- | ------------ | FileReaderManager.java |
 ----- | ----- | ------------ | WebDriverManager.java |
------ |	----- |	com.sk.pageobjects | ----- |
+----- |	----- |	com.automation.pageobjects | ----- |
 ----- |	----- |	--------------- | SampleLoginPage.java |
------ | ----- | com.sk.cucumber | --- |
+----- | ----- | com.automation.cucumber | --- |
 ----- | ----- | -------- | TestContext.java |		<!-- Pico-Container managing WebdriverManager and pageObjectManager -->
------ | ----- |	com.sk.dataProvider | ---- |
+----- | ----- |	com.automation.dataProvider | ---- |
 ----- | ----- |	------------ | ConfigFileReader.java |
 ----- | ----- | enums | ---- |
 ----- | ----- | ----- | DriverType.java |
 ----- | ----- | ----- | EnvironmentType.java |
------ | ----- |	com.sk.helperutils | ---- |
+----- | ----- |	com.automation.helperutils | ---- |
 ----- | ----- |	------------ | HelperUtility.java |
------ | ----- |	com.sk.waitutility | ---- |
+----- | ----- |	com.automation.waitutility | ---- |
 ----- | ----- |	------------ | WaitUtility.java |
------ | ----- |	com.sk.locators | ---- |
+----- | ----- |	com.automation.locators | ---- |
 ----- | ----- |	------------ | SampleElements.java |
-src/test/java | ---- | com.sk.runners | ---- |
+src/test/java | ---- | com.automation.runners | ---- |
 ----- | ----- | ----------- | TestRunner.java |
------ | ----- | com.sk.stepdefinitions | ---- |
+----- | ----- | com.automation.stepdefinitions | ---- |
 ----- | ----- | ------------------- | SampleLoginPageStep.java |
 src/test/resources | ---- | features | ---- |
 ---- | ---- | ---- | SampleModule1.feature |
