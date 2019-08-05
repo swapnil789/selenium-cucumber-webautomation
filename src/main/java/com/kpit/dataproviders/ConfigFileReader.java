@@ -35,14 +35,14 @@ public class ConfigFileReader {
 			throw new RuntimeException("Configuration.properties not found at " + propertyFilePath);
 		}
 	}
-	//Old implementation of WebDriver, can be used in future if new implementation fails
-	/*public String getDriverPath() {
+
+	public String getDriverPath() {
 		String driverPath = properties.getProperty("driverPath");
 		if (driverPath != null)
 			return driverPath;
 		else
 			throw new RuntimeException("driverPath not specified in the Configuration.properties file.");
-	}*/
+	}
 
 	public long getImplicitlyWait() {
 		String implicitlyWait = properties.getProperty("implicitlyWait");

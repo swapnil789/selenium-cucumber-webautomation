@@ -10,8 +10,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import com.kpit.enums.DriverType;
 import com.kpit.enums.EnvironmentType;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 /**
  * @author Swapnil Khute
  *
@@ -21,7 +19,9 @@ public class WebdriverManager {
 	private static WebDriver driver;
 	private static DriverType driverType;
 	private static EnvironmentType environmentType;
-	//private static final String CHROME_DRIVER_PROPERTY = "webdriver.chrome.driver";  //Old implementation of WebDriver, can be used in future if new implementation fails
+	private static final String CHROME_DRIVER_PROPERTY = "webdriver.chrome.driver";
+	private static final String FIREFOX_DRIVER_PROPERTY = "webdriver.gecko.driver";
+	private static final String IE_DRIVER_PROPERTY = "webdriver.ie.driver";
  
 	public WebdriverManager() {
 		driverType = FileReaderManager.getInstance().getConfigReader().getBrowser();
@@ -66,16 +66,15 @@ public class WebdriverManager {
 	private WebDriver createLocalDriver() {
         switch (driverType) {	    
         case FIREFOX :
-        	WebDriverManager.firefoxdriver().proxy("http://kinpunp3proxy.kpit.com:80").setup();
+        	System.setProperty(FIREFOX_DRIVER_PROPERTY, FileReaderManager.getInstance().getConfigReader().getDriverPath());
         	driver = new FirefoxDriver();
 	    	break;
         case CHROME : 
-        	//System.setProperty(CHROME_DRIVER_PROPERTY, FileReaderManager.getInstance().getConfigReader().getDriverPath());  //Old implementation of WebDriver, can be used in future if new implementation fails
-        	WebDriverManager.chromedriver().proxy("http://kinpunp3proxy.kpit.com:80").setup();
+        	System.setProperty(CHROME_DRIVER_PROPERTY, FileReaderManager.getInstance().getConfigReader().getDriverPath());  //Old implementation of WebDriver, can be used in future if new implementation fails
         	driver = new ChromeDriver();
     		break;
         case INTERNETEXPLORER : 
-        	WebDriverManager.iedriver().proxy("http://kinpunp3proxy.kpit.com:80").setup();        	
+        	System.setProperty(IE_DRIVER_PROPERTY, FileReaderManager.getInstance().getConfigReader().getDriverPath());        	
         	driver = new InternetExplorerDriver();
     		break;
         }
