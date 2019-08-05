@@ -1,9 +1,9 @@
-package com.kpit.stepdefinitions;
+package com.automation.stepdefinitions;
 
 import org.openqa.selenium.WebDriver;
 
-import com.kpit.cucumber.TestContext;
-import com.kpit.pageobjects.SampleLoginPage;
+import com.automation.cucumber.TestContext;
+import com.automation.pageobjects.SampleLoginPage;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

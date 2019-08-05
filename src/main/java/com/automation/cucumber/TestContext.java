@@ -1,7 +1,7 @@
-package com.kpit.cucumber;
+package com.automation.cucumber;
 
-import com.kpit.managers.PageObjectManager;
-import com.kpit.managers.WebdriverManager;
+import com.automation.managers.PageObjectManager;
+import com.automation.managers.WebdriverManager;
 
 /**
  * @author Swapnil Khute

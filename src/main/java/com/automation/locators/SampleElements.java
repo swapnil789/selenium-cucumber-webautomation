@@ -1,4 +1,4 @@
-package com.kpit.locators;
+package com.automation.locators;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

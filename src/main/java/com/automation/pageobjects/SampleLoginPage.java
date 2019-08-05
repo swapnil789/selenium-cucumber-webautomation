@@ -1,12 +1,11 @@
-package com.kpit.pageobjects;
+package com.automation.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 
-
-import com.kpit.helperutils.HelperUtility;
-import com.kpit.locators.SampleElements;
-import com.kpit.managers.FileReaderManager;
-import com.kpit.waitutility.WaitUtil;
+import com.automation.helperutils.HelperUtility;
+import com.automation.locators.SampleElements;
+import com.automation.managers.FileReaderManager;
+import com.automation.waitutility.WaitUtil;
 
 /**
  * @author Swapnil Khute

@@ -1,4 +1,4 @@
-package com.kpit.managers;
+package com.automation.managers;
 
 import java.util.concurrent.TimeUnit;
 
@@ -7,8 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import com.kpit.enums.DriverType;
-import com.kpit.enums.EnvironmentType;
+import com.automation.enums.DriverType;
+import com.automation.enums.EnvironmentType;
 
 /**
  * @author Swapnil Khute

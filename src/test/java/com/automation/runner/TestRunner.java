@@ -1,4 +1,4 @@
-package com.kpit.runner;
+package com.automation.runner;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -8,10 +8,10 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
+import com.automation.cucumber.TestContext;
+import com.automation.managers.FileReaderManager;
 import com.cucumber.listener.ExtentProperties;
 import com.cucumber.listener.Reporter;
-import com.kpit.cucumber.TestContext;
-import com.kpit.managers.FileReaderManager;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
@@ -24,7 +24,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features={"src/test/resources/features"},
-		glue={"com.kpit.stepdefinitions"},
+		glue={"com.automation.stepdefinitions"},
 		//tags={"@Home"}, // this is used when we have multiple tests in a feature file. If one test then no need to mention this annotation
 		plugin={"com.cucumber.listener.ExtentCucumberFormatter:"}
 		//,dryRun=true // To test if the all the gherkin methods declared and defined or not.It will give an update if any issues there before running the actual test
@@ -38,7 +38,7 @@ public class TestRunner {
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
 		ExtentProperties extentProperties = ExtentProperties.INSTANCE;
 		extentProperties.setReportPath("target/cucumber-reports/" + "Automation_Report_" + timeStamp + ".html");
-		extentProperties.setProjectName("KPIT");
+		extentProperties.setProjectName("Swapnil's Automation");
 	}
 	
 	@AfterClass

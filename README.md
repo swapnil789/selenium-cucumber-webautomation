@@ -1,12 +1,11 @@
 **************************************************************************************************
 **************************************************************************************************
-## KPIT Technologies
+## Selenium Cucumber Test Framework
 **************************************************************************************************
 **************************************************************************************************
 
 seleniumcucumber webapp generic testframework
 Release - v0.1.0
-(C) 2018 KPIT Technologies Limited. All Rights Reserved.
 
 **************************************************************************************************
 **************************************************************************************************
@@ -14,35 +13,34 @@ Release - v0.1.0
 ## Steps to get you set up and running:
 1.  Install jdk1.8.0_172 , setup environment variable of JAVA_HOME = "C:\Program Files\Java\jdk1.8.0_172"
 2.  Download Eclipse Mars Enterprise Edition
-3.  Clone the repository using command "http://git.diagnostics.kpit.com/scm/en/selenium_cucumber_test_framework.git"
-4.  Import the clone project in selected workspace
+3.  Import the clone project in selected workspace
 
 ## The following structure with corresponding folder and file names is to be maintained and followed:
 
 seleniumcucumber_webapp_testframework | | | |
 ----- | ----- | ----- | ----- | -----
-src/main/java |	----- | com.kpit.Managers | ---- |
+src/main/java |	----- | com.sk.Managers | ---- |
 ----- | ----- | ------------ | PageObjectManager.java |
 ----- | ----- | ------------ | FileReaderManager.java |
 ----- | ----- | ------------ | WebDriverManager.java |
------ |	----- |	com.kpit.pageobjects | ----- |
+----- |	----- |	com.sk.pageobjects | ----- |
 ----- |	----- |	--------------- | SampleLoginPage.java |
------ | ----- | com.kpit.cucumber | --- |
+----- | ----- | com.sk.cucumber | --- |
 ----- | ----- | -------- | TestContext.java |		<!-- Pico-Container managing WebdriverManager and pageObjectManager -->
------ | ----- |	com.kpit.dataProvider | ---- |
+----- | ----- |	com.sk.dataProvider | ---- |
 ----- | ----- |	------------ | ConfigFileReader.java |
 ----- | ----- | enums | ---- |
 ----- | ----- | ----- | DriverType.java |
 ----- | ----- | ----- | EnvironmentType.java |
------ | ----- |	com.kpit.helperutils | ---- |
+----- | ----- |	com.sk.helperutils | ---- |
 ----- | ----- |	------------ | HelperUtility.java |
------ | ----- |	com.kpit.waitutility | ---- |
+----- | ----- |	com.sk.waitutility | ---- |
 ----- | ----- |	------------ | WaitUtility.java |
------ | ----- |	com.kpit.locators | ---- |
+----- | ----- |	com.sk.locators | ---- |
 ----- | ----- |	------------ | SampleElements.java |
-src/test/java | ---- | com.kpit.runners | ---- |
+src/test/java | ---- | com.sk.runners | ---- |
 ----- | ----- | ----------- | TestRunner.java |
------ | ----- | com.kpit.stepdefinitions | ---- |
+----- | ----- | com.sk.stepdefinitions | ---- |
 ----- | ----- | ------------------- | SampleLoginPageStep.java |
 src/test/resources | ---- | features | ---- |
 ---- | ---- | ---- | SampleModule1.feature |

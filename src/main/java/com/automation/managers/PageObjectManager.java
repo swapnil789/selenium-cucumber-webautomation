@@ -1,7 +1,8 @@
-package com.kpit.managers;
+package com.automation.managers;
 
 import org.openqa.selenium.WebDriver;
-import com.kpit.pageobjects.SampleLoginPage;
+
+import com.automation.pageobjects.SampleLoginPage;
 
 /**
  * @author Swapnil Khute

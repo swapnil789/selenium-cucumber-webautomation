@@ -1,4 +1,4 @@
-package com.kpit.enums;
+package com.automation.enums;
 
 /**
  * @author Swapnil Khute

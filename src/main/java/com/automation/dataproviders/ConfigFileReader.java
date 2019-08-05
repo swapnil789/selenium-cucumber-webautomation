@@ -1,4 +1,4 @@
-package com.kpit.dataproviders;
+package com.automation.dataproviders;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -6,8 +6,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-import com.kpit.enums.DriverType;
-import com.kpit.enums.EnvironmentType;
+import com.automation.enums.DriverType;
+import com.automation.enums.EnvironmentType;
 
 
 /**

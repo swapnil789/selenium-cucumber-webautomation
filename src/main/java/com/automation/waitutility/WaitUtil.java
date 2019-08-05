@@ -1,4 +1,4 @@
-package com.kpit.waitutility;
+package com.automation.waitutility;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

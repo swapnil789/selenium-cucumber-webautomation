@@ -1,4 +1,4 @@
-package com.kpit.helperutils;
+package com.automation.helperutils;
 
 import org.openqa.selenium.JavascriptExecutor;
 

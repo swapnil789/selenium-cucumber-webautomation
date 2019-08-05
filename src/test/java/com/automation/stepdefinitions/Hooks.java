@@ -1,4 +1,4 @@
-package com.kpit.stepdefinitions;
+package com.automation.stepdefinitions;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,9 +6,9 @@ import java.io.IOException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+import com.automation.cucumber.TestContext;
 import com.cucumber.listener.Reporter;
 import com.google.common.io.Files;
-import com.kpit.cucumber.TestContext;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -29,7 +29,7 @@ public class Hooks {
 
 	@Before
 	public void beforeScenario(Scenario scenario) {
-		Reporter.assignAuthor("KPIT Technologies");
+		Reporter.assignAuthor("Swapnil Khute");
 	}
 
 	@After

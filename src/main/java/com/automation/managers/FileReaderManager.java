@@ -1,6 +1,6 @@
-package com.kpit.managers;
+package com.automation.managers;
 
-import com.kpit.dataproviders.ConfigFileReader;
+import com.automation.dataproviders.ConfigFileReader;
 /**
  * @author Swapnil Khute
  *
