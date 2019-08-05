@@ -1,0 +1,17 @@
+# Options
+/.settings
+/.classpath
+
+# Tools
+/Resources
+
+# Output
+/target
+
+# Others
+/.project
+
+#LogFile
+/*.log
+
+/bin/
