@@ -3,6 +3,7 @@ package com.automation.stepdefinitions;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.commons.codec.binary.Base64;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -48,8 +49,15 @@ public class Hooks {
 				File screenshotFile = new File(destinationPath.getAbsolutePath()+"\\"+screenshotName+".png");
 				// Copy taken screenshot from source location to destination location
 				Files.copy(sourcePath, screenshotFile);
+
+				//Encode the screenshot to Base64 string format
+				FileInputStream fis = new FileInputStream(screenshotFile);
+				byte byteArray[] = new byte[(int)screenshotFile.length()];
+				fis.read(byteArray);
+				String imageString = Base64.encodeBase64String(byteArray);
+				fis.close();
 				// This attach the specified screenshot to the test
-				Reporter.addScreenCaptureFromPath(screenshotFile.toString());
+				Reporter.addScreenCaptureFromPath("data:image/png;base64,"+imageString);
 				
 			} catch (IOException e) {
 				e.printStackTrace();
