@@ -43,11 +43,11 @@ public class SendMail {
 			Properties properties = new Properties();
 			properties.setProperty("mail.smtp.submitter", authenticator.getPasswordAuthentication().getUserName());
 			properties.setProperty("mail.smtp.auth", "true");
-			properties.setProperty("mail.smtp.ssl.trust", "smtp.kpit.com");
+			properties.setProperty("mail.smtp.ssl.trust", "smtp.gmail.com");
 			properties.setProperty("mail.smtp.starttls.enable", "true");
 			properties.put("mail.smtp.starttls.enable", "true");	
-			properties.setProperty("mail.smtp.host", "smtp.kpit.com");
-			properties.setProperty("mail.smtp.port", "25");
+			properties.setProperty("mail.smtp.host", "smtp.gmail.com");
+			properties.setProperty("mail.smtp.port", "465");
 			return Session.getInstance(properties, authenticator);
 		}
 
@@ -55,7 +55,7 @@ public class SendMail {
 			private PasswordAuthentication authentication;
 
 			public Authenticator() {
-				String username = "Diagnostics.Automationtesting@kpit.com";
+				String username = "swapnilkhute@gamil.com";
 				String password = "Welcome@18";
 				authentication = new PasswordAuthentication(username, password);
 			}
@@ -74,10 +74,10 @@ public class SendMail {
 			msg.addHeader("Content-Transfer-Encoding", "8bit");
 			
 
-			msg.setFrom(new InternetAddress("Diagnostics.Automationtesting@kpit.com",
+			msg.setFrom(new InternetAddress("swapnilkhute@gamil.com",
 					"NoReply-DiagQA"));
 
-			msg.setReplyTo(InternetAddress.parse("Diagnostics.Automationtesting@kpit.com",
+			msg.setReplyTo(InternetAddress.parse("swapnilkhute@gamil.com",
 					false));
 
 			msg.setSubject(subject, "UTF-8");
