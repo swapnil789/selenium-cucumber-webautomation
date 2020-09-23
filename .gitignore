@@ -1,6 +1,7 @@
 # Options
 /.settings
 /.classpath
+/.metadata
 
 # Tools
 /Resources
